@@ -1,0 +1,82 @@
+:root {
+  font-family: "Josefin Sans", sans-serif;
+  color-scheme: light dark;
+
+  /* Neutral colors */
+  --active-btn-color: hsl(220, 98%, 61%);
+  --checked-bg: linear-gradient(
+    180deg,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+  --logo-color: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: var(--main-bg-color);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 2rem 0.5rem;
+
+  &.dark {
+    --main-bg-color: hsl(235, 21%, 11%);
+    --todo-bg-color: hsl(235, 24%, 19%);
+    --text-color: hsl(234, 39%, 85%);
+    --btn-text-color: hsl(234, 11%, 52%);
+    --btn-hover-color: hsl(236, 33%, 92%);
+    --task-completed-color: hsl(233, 14%, 35%);
+    --clear-btn-hover-color: hsl(234, 39%, 85%);
+    --checkbox-border-color: hsl(237, 14%, 50%);
+    --footer-text-color: hsl(233, 14%, 35%);
+    --bg-image: url("./assets/bg-desktop-dark.jpg");
+
+    --start-tour-btn-bg-color: #000;
+    --start-tour-btn-text-color: #fff;
+  }
+
+  &.light {
+    --main-bg-color: hsl(0, 0%, 98%);
+    --todo-bg-color: hsl(0, 0%, 98%);
+    --text-color: hsl(234, 11%, 52%);
+    --btn-hover-color: hsl(235, 19%, 35%);
+    --task-completed-color: hsl(233, 11%, 84%);
+    --clear-btn-hover-color: hsl(236, 9%, 61%);
+    --checkbox-border-color: hsl(236, 33%, 92%);
+    --footer-text-color: hsl(236, 9%, 61%);
+    --bg-image: url("./assets/bg-desktop-light.jpg");
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 6vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.start-tour-btn {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  border-radius: 3px;
+}

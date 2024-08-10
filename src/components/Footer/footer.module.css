@@ -1,0 +1,6 @@
+.footer {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 1rem;
+  color: var(--footer-text-color);
+}
